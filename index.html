@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG DER NACHHALTIGKEIT</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Changed to column to stack header and image */
+            justify-content: flex-start;
+            align-items: center; /* Align to top for header visibility */
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Light background for contrast */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="w-full bg-orange-600 text-white p-4 sm:p-6 md:p-8 shadow-lg flex flex-col items-center justify-center">
+        <!-- Container for text to ensure proper spacing and alignment -->
+        <div class="text-center">
+            <!-- "TAG DER NACHHALTIGKEIT" with responsive font sizes -->
+            <div class="text-xl sm:text-7xl font-bold mb-2">
+                TAG DER NACHHALTIGKEIT
+            </div>
+            <!-- "Sammelaktion für die Tafel Ebingen" with responsive font sizes -->
+            <div class="text-base sm:text-5xl mb-0">
+                Sammelaktion für die Tafel Ebingen
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Image Section below the header -->
+    <!-- Frame with 20px margin and dynamic width -->
+    <div id="image-container" class="p-2 border-2 border-black shadow-md bg-white rounded-lg" style="margin: 20px; width: calc(100% - 40px);">
+        <img
+            src="website/pictures/Tafel_Deutschland_logo.svg.png"
+            alt="Tafel Deutschland Logo"
+            class="w-full h-auto"
+        />
+    </div>
+
+    <!-- Text Boxes Section below the image -->
+    <div class="w-full flex flex-col items-center space-y-4 mb-8 sm:px-3">
+        <!-- Text Box 1: Call to Action -->
+        <div class="w-full p-4 font-bold">
+            <p class="text-base sm:text-3xl mb-0 text-black">
+                Unterstützen Sie die Tafel Ebingen mit Ihrer Spende!
+            </p>
+        </div>
+
+        <!-- Text Box 2: Explanation of Tafel -->
+        <div class="w-full p-4">
+            <p class="text-base sm:text-3xl mb-0 text-black">
+                Die Tafel versorgt bedürftige Menschen mit Lebensmitteln zu günstigen Preisen und hilft gleichzeitig, Lebensmittelverschwendung zu reduzieren.
+            </p>
+        </div>
+
+        <!-- Text Box 3: Motto -->
+        <div class="w-full p-4 font-bold">
+            <p class="text-base sm:text-3xl mb-0 text-orange-600">
+                Nachhaltigkeit leben - Teilen statt Verschwenden!
+            </p>
+        </div>
+    </div>
+
+    <!-- Second Image Section -->
+    <div id="image-container-2" class="p-2 border-2 border-black shadow-md bg-white rounded-lg" style="margin: 20px; width: calc(100% - 40px);">
+        <img
+            src="website/pictures/Tafel_statistic.jpeg"
+            alt="Statistik zur Tafel Deutschland"
+            class="w-full h-auto"
+        />
+    </div>
+
+    <!-- New Section with bullet points and images (Besonders benötigen wir) -->
+    <div class="w-full px-5 flex flex-col items-center space-y-8 mb-8">
+
+        <!-- Main Heading for the "Besonders benötigen wir" section -->
+        <div class="w-full md:p-4 font-bold text-center">
+            <p class="text-base sm:text-3xl mb-0 text-orange-600">
+                Besonders benötigen wir:
+            </p>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: Haltbare Lebensmittel -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for Bullet Points 1 - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="github/website/pictures/lebensmittel.jpg"
+                    alt="Grafik für haltbare Lebensmittel"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for Bullet Points 1 -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Haltbare Lebensmittel:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Nudeln</li>
+                    <li>Reis</li>
+                    <li>Konserven</li>
+                    <li>Mehl</li>
+                    <li>Zucker</li>
+                    <li>Öl</li>
+                    <li>Molkereiprodukte (H-Milch, etc.)</li>
+                    <li>Tiernahrung</li>
+                    <li>Alkoholfreie Getränke</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: Hygieneartikel -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for Bullet Points 2 - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="website/pictures/hygiene.jpg"
+                    alt="Grafik für Hygieneartikel"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for Bullet Points 2 -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Hygieneartikel:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Zahnpasta</li>
+                    <li>Seife</li>
+                    <li>Shampoo</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: Babyartikel -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for Bullet Points 3 - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="website/pictures/babyartikel.jpg"
+                    alt="Grafik für Babyartikel"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for Bullet Points 3 -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Babyartikel:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Windeln</li>
+                    <li>Babynahrung</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Section for "So können Sie helfen" -->
+    <div class="w-full px-5 flex flex-col items-center space-y-8 mb-8">
+        <!-- Main Heading for "So können Sie helfen" -->
+        <div class="w-full md:p-4 font-bold text-center">
+            <p class="text-base sm:text-3xl mb-0 text-orange-600">
+                Weitere Unterstützung:
+            </p>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: So können Sie helfen -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for Bullet Points 4 - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="websiteproject\pictures\together.jpg"
+                    alt="Grafik für Hilfsmöglichkeiten"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for Bullet Points 4 -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Alternative Hilfsmögichkeiten:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Helfen Sie ehrenamtlich bei der Sortierung und Verteilung.</li>
+                    <li>Informieren Sie Freunde und Familie über die Aktion.</li>
+                    <li>Tätigen Sie eine Geldspende direkt an die Tafel Ebingen.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Section for "Wann und Wo" -->
+    <div class="w-full px-5 flex flex-col items-center space-y-8 mb-8">
+        <!-- Main Heading for "Wann und Wo" section -->
+        <div class="w-full md:p-4 font-bold text-center">
+            <p class="text-base sm:text-3xl mb-0 text-orange-600">
+                Wann und Wo:
+            </p>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: Wann -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for "Wann" - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="https://placehold.co/100x100/FFC0CB/000000?text=Time"
+                    alt="Grafik für Zeit"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for "Wann" -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Wann:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Datum: Montag, 07. Juli 2025</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Text Box with Bullet Points and Image: Wo -->
+        <div class="w-full p-4 flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+            <!-- Image for "Wo" - Fixed size -->
+            <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
+                <img
+                    src="https://placehold.co/100x100/ADD8E6/000000?text=Location"
+                    alt="Grafik für Ort"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+            <!-- Text Content for "Wo" -->
+            <div class="flex-grow">
+                <h3 class="text-black font-semibold mb-2 sm:text-2xl">Wo:</h3>
+                <ul class="list-disc list-inside text-black space-y-1 sm:text-2xl">
+                    <li>Ort: Walter-Grotz-Schule</li>
+                    <li>Adresse: Johannesstraße 4-6, 72458 Albstadt</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-orange-600 text-white p-4 sm:p-6 md:p-8 shadow-lg flex flex-col items-center justify-center mt-8">
+        <div class="text-center text-base sm:text-lg">
+            <p class="font-bold mb-1">Kontakt & Information:</p>
+            <p>Tafel Ebingen im Zollernalbkreis</p>
+            <p>Öffnungszeiten: Montag und Donnerstag 14:00 - 17:00 Uhr</p>
+            <p>Bei Fragen wenden Sie sich bitte an die Walter-Grotz-Schule</p>
+        </div>
+    </footer>
+</body>
+</html>
